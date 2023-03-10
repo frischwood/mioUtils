@@ -1,0 +1,17 @@
+SMET 1.1 ASCII
+[HEADER]
+station_id       = {{station_id}}
+station_name     = {{station_name}}
+latitude         = {{latitude}}
+longitude        = {{longitude}}
+altitude         = {{altitude}}
+easting          = {{easting}}
+northing         = {{northing}}
+epsg             = {{epsg}}
+nodata           = {{nodata}}
+tz               = {{tz}}
+slope_angle      = {{slope_angle}}
+slope_azi        = {{slope_azi}}
+fields           = {{fields}}
+[DATA]
+{{data}}
