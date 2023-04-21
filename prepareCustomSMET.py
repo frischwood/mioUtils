@@ -5,12 +5,15 @@ Can be ran from command line if files are in the correct folders
 import pandas as pd
 import jinja2
 import os
+from pathlib import Path
 
 
 TEMPLATE_PATH = "input/templates/"
 DATAFRAME_PATH = "input/dataFrames/"
 OUTPUT_PATH = "output/"
-
+# make sure dataframe dir and output exist
+Path(DATAFRAME_PATH).mkdir(parents=True, exist_ok=True)
+Path(OUTPUT_PATH).mkdir(parents=True, exist_ok=True)
 # get dataframe
 if os.listdir(DATAFRAME_PATH):
     df = pd.read_csv(os.listdir(DATAFRAME_PATH)[0])
